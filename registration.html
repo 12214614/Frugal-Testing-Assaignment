@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="regForm" novalidate>
+
+    <!-- Top alert -->
+    <div id="topAlert" class="alert" role="alert" aria-live="polite">
+        <span class="alert-message"></span>
+        <button type="button" class="alert-close">&times;</button>
+    </div>
+
+    <h2>Registration Form</h2>
+
+    <label>First Name *</label>
+    <input type="text" id="firstName">
+    <div class="error" id="firstNameError"></div>
+
+    <label>Last Name *</label>
+    <input type="text" id="lastName">
+    <div class="error" id="lastNameError"></div>
+
+    <label>Email *</label>
+    <input type="text" id="email">
+    <div class="error" id="emailError"></div>
+
+    <label>Age</label>
+    <input type="number" id="age" min="1" max="120" placeholder="e.g., 30">
+    <div class="error" id="ageError"></div>
+
+    <label>Phone Number *</label>
+    <input type="text" id="phone" placeholder="+91XXXXXXXXXX">
+    <div class="error" id="phoneError"></div>
+
+    <label>Password *</label>
+    <input type="password" id="password">
+    <div id="strength"></div>
+
+    <label>Confirm Password *</label>
+    <input type="password" id="confirmPassword">
+    <div class="error" id="passwordError"></div>
+
+    <label>Gender *</label>
+    <div class="radio-group">
+        <label class="radio-inline"><input type="radio" name="gender" value="Male"> <span>Male</span></label>
+        <label class="radio-inline"><input type="radio" name="gender" value="Female"> <span>Female</span></label>
+        <label class="radio-inline"><input type="radio" name="gender" value="Other"> <span>Other</span></label>
+    </div>
+    <div class="error" id="genderError"></div>
+
+    <label>Address</label>
+    <textarea id="address"></textarea>
+
+    <label>Country</label>
+    <select id="country">
+        <option value="">Select Country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+    </select>
+
+    <label>State</label>
+    <select id="state">
+        <option value="">Select State</option>
+    </select>
+
+    <label>City</label>
+    <select id="city">
+        <option value="">Select City</option>
+    </select>
+
+    <div class="checkbox-group">
+        <label class="checkbox-inline"><input type="checkbox" id="terms"> <span>I accept the terms and conditions *</span></label>
+    </div>
+    <div class="error" id="termsError"></div>
+
+    <button type="button" id="submitBtn">Register</button>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

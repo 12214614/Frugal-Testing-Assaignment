@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    background: #f2f5f9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#regForm {
+    background: #fff;
+    padding: 25px;
+    width: 100%;
+    max-width: 520px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #cfd8e3;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.disabled-btn {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+.input-error {
+    border: 2px solid #dc2626;
+}
+
+#strength {
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+#strength.weak { color: red; }
+#strength.medium { color: orange; }
+#strength.strong { color: green; }
+
+/* Alert */
+.alert {
+    display: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.alert-error {
+    background: #fee2e2;
+    color: #7f1d1d;
+}
+
+.alert-close {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Horizontal radio and checkbox layouts */
+.radio-group {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.radio-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.radio-inline input[type="radio"] { margin: 0; }
+
+.checkbox-group { display: flex; align-items: center; gap: 8px; margin-top: 8px; margin-bottom: 8px; flex-wrap: nowrap; }
+.checkbox-inline { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 600; white-space: nowrap; }
+.checkbox-inline input[type="checkbox"] { margin: 0; transform: translateY(0); }
+.checkbox-inline span { display: inline-block; white-space: nowrap; }
